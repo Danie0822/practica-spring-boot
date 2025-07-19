@@ -1,0 +1,87 @@
+# Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+pom.xml.versionsBackup
+pom.xml.backup
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Environment Variables ###
+.env
+.env.local
+.env.production
+.env.staging
+
+### Database ###
+*.db
+*.sqlite
+*.h2.db
+
+### Logs ###
+logs/
+*.log
+log/
+
+### Temporary files ###
+*.tmp
+*.swp
+*.swo
+*~
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+### OS Files ###
+.DS_Store
+Thumbs.db
+
+### Security ###
+*.key
+*.pem
+*.p12
+*.jks
+
+### Application specific ###
+uploads/
+temp/
+cache/
+
+### Coverage reports ###
+target/site/jacoco/
+*.exec
+
+### Backup files ###
+*~
+*.backup
