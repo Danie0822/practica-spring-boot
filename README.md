@@ -1,4 +1,4 @@
-# User API - Spring Boot Practice Repository
+# Práctica Spring Boot - User API
 
 Este es un repositorio para recordar y practicar conocimientos de **Spring Boot**. El proyecto implementa una API REST para la gestión de usuarios con operaciones CRUD completas.
 
@@ -41,50 +41,22 @@ La API está completamente documentada con Swagger UI. Una vez que el servidor e
 
 🔗 **[http://localhost:8080/swagger-ui](http://localhost:8080/swagger-ui)**
 
-## 🚀 Cómo ejecutar el proyecto
-
-### Prerrequisitos
-- Java 17 o superior
-- Maven 3.6+
-
-### Pasos para ejecutar
+## 🚀 Cómo ejecutar
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/Danie0822/user-api.git
-   cd user-api
+   git clone https://github.com/Danie0822/practica-spring-boot.git
    ```
 
-2. **Configurar variables de entorno** (opcional)
+2. **Ejecutar la aplicación**
    ```bash
-   cp .env.example .env
-   # Edita el archivo .env con tus configuraciones
-   ```
-
-3. **Ejecutar la aplicación**
-   ```bash
-   # Usando Maven
    ./mvnw spring-boot:run
-   
-   # O en Windows
-   mvnw.cmd spring-boot:run
    ```
 
-4. **Acceder a la aplicación**
-   - API Base URL: `http://localhost:8080`
+3. **Acceder a la documentación**
    - Swagger UI: `http://localhost:8080/swagger-ui`
 
-## 📋 Endpoints Principales
-
-| Método | Endpoint | Descripción |
-|--------|----------|-------------|
-| GET | `/api/users` | Obtener todos los usuarios |
-| GET | `/api/users/{id}` | Obtener usuario por ID |
-| POST | `/api/users` | Crear nuevo usuario |
-| PUT | `/api/users/{id}` | Actualizar usuario |
-| DELETE | `/api/users/{id}` | Eliminar usuario |
-
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 src/
@@ -118,25 +90,3 @@ Este proyecto se irá actualizando con nuevas funcionalidades y mejoras:
 - [ ] Añadir logging con Logback
 - [ ] Implementar CI/CD con GitHub Actions
 - [ ] Añadir métricas con Actuator
-
-## 🤝 Contribuciones
-
-Este es un proyecto de práctica, pero las contribuciones son bienvenidas:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
-
-## 👨‍💻 Autor
-
-**Daniel Morales** - [Danie0822](https://github.com/Danie0822)
-
----
-
-⭐ Si este proyecto te ayuda a recordar o aprender Spring Boot, ¡no olvides darle una estrella!
