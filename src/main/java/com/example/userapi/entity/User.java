@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long  id;
+    private Long id;
     @Column(nullable = false, unique = true)
     private String email;
     @Column(nullable = false)
@@ -26,7 +26,7 @@ public class User {
     private String name;
     @Column
     private Integer age;
-    @Column(name = "created_at",nullable = false, updatable = false)
+    @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
@@ -39,6 +39,7 @@ public class User {
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
     }
+
     public boolean isDeleted() {
         // Verifica si el usuario ha sido eliminado
         return deletedAt != null;
