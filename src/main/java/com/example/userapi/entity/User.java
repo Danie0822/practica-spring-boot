@@ -1,5 +1,7 @@
 package com.example.userapi.entity;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -24,4 +26,21 @@ public class User {
     private String name;
     @Column
     private Integer age;
+    @Column(nullable = false, updatable = false)
+    private LocalDateTime createdAt;
+    @Column
+    private LocalDateTime updatedAt;
+    @Column
+    private LocalDateTime deletedAt;
+
+    @PrePersist
+    private void prePersist() {
+        // Este método se ejecuta antes de guardar el objeto en la base de datos
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
+    }
+    public boolean isDeleted() {
+        // Verifica si el usuario ha sido eliminado
+        return deletedAt != null;
+    }
 }

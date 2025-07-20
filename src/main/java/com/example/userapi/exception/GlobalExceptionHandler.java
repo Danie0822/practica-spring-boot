@@ -37,4 +37,11 @@ public class GlobalExceptionHandler {
         // Retorna HTTP 500 para errores internos del servidor
         return ResponseEntity.status(500).body(ApiResponse.error(500, "Error interno: " + ex.getMessage()));
     }
+
+    // Maneejar excepciones de validaciónes de campos uniques 
+    @ExceptionHandler(ResourceUniqueConstraintException.class)
+    public ResponseEntity<ApiResponse<?>> handleUniqueConstraint(ResourceUniqueConstraintException ex) {
+        // Retorna HTTP 409 (conflicto) con el mensaje de la excepción
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(ApiResponse.error(409, ex.getMessage()));
+    }
 }
