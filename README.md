@@ -39,7 +39,7 @@ Este es un repositorio para recordar y practicar conocimientos de **Spring Boot*
 
 La API está completamente documentada con Swagger UI. Una vez que el servidor esté ejecutándose, puedes acceder a la documentación en:
 
-🔗 **[http://localhost:8080/swagger-ui](http://localhost:8080/swagger-ui)**
+🔗 **[http://localhost:8080/api/swagger-ui](http://localhost:8080/api/swagger-ui)**
 
 ## 🚀 Cómo ejecutar
 
@@ -54,7 +54,7 @@ La API está completamente documentada con Swagger UI. Una vez que el servidor e
    ```
 
 3. **Acceder a la documentación**
-   - Swagger UI: `http://localhost:8080/swagger-ui`
+   - Swagger UI: `http://localhost:8080/api/swagger-ui`
 
 ##  Estructura del Proyecto
 

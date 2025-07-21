@@ -15,6 +15,8 @@ public class UserApiApplication {
         System.setProperty("spring.datasource.password", dotenv.get("DATABASE_PASSWORD"));
         System.setProperty("spring.datasource.userNameLogin",dotenv.get("USER_NAME"));
         System.setProperty("spring.datasource.userPassword",dotenv.get("USER_PASSWORD"));
+        System.setProperty("server.port", dotenv.get("PORT"));
+        System.setProperty("app.profiles.active", dotenv.get("SPRING_PROFILES_ACTIVE"));
 
         SpringApplication.run(UserApiApplication.class, args);
     }
