@@ -5,7 +5,7 @@ import io.swagger.v3.oas.models.info.Info;
 import org.springframework.context.annotation.*;
 
 @Configuration
-@Profile("dev") // Solo se activa en el perfil de desarrollo
+@Profile("dev") // Se activa solo en el perfil de desarrollo
 public class SwaggerConfig {
 
     @Bean
