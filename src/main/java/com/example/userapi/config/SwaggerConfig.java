@@ -1,4 +1,3 @@
-// config/SwaggerConfig.java
 package com.example.userapi.config;
 
 import io.swagger.v3.oas.models.*;
@@ -6,6 +5,7 @@ import io.swagger.v3.oas.models.info.Info;
 import org.springframework.context.annotation.*;
 
 @Configuration
+@Profile("dev") // Solo se activa en el perfil de desarrollo
 public class SwaggerConfig {
 
     @Bean
